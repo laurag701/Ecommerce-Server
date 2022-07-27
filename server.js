@@ -1,7 +1,7 @@
 const express = require('express'); //installing express
 const mysql = require('mysql'); //installing mysql
 const cors = require('cors'); //installing cors
-const port = 3001;
+const port = 3002;
 
 const app = express();
 app.use(cors());

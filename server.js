@@ -12,7 +12,10 @@ var db = mysql.createConnection({
     password: 'Luna8368',
     database: 'Ecommerce'
 })
-app.get('/Products', (req, res) => {
+app.listen(process.env.PORT || port , () => {
+    console.log('connected to port 3001');
+})
+app.get('/products', (req, res) => {
     db.query('SELECT * FROM Products', (err, result) =>{
       if(err){
           console.log(err);
@@ -24,6 +27,3 @@ app.get('/Products', (req, res) => {
     })
 })
 module.exports
-app.listen(process.env.PORT || port , () => {
-    console.log('connected to port 3001');
-})

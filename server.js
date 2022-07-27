@@ -7,8 +7,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 var db = mysql.createConnection({
-    user: 'root',
-    host: 'localhost',
+    user: 'admin',
+    host: 'ecomm-react.czoa6b96suwp.us-east-2.rds.amazonaws.com',
     password: 'Luna8368',
     database: 'Ecommerce'
 })

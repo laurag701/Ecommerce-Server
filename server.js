@@ -1,6 +1,7 @@
 const express = require('express'); //installing express
 const mysql = require('mysql'); //installing mysql
 const cors = require('cors'); //installing cors
+const port = 3001;
 
 const app = express();
 app.use(cors());
@@ -23,6 +24,6 @@ app.get('/Products', (req, res) => {
     })
 })
 module.exports
-app.listen(3001, () => {
+app.listen(process.env.PORT || port , () => {
     console.log('connected to port 3001');
 })

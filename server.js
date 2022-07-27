@@ -9,6 +9,7 @@ app.use(express.json());
 var db = mysql.createConnection({
     user: 'admin',
     host: 'ecomm-react.czoa6b96suwp.us-east-2.rds.amazonaws.com',
+    port: 3306,
     password: 'Luna8368',
     database: 'Ecommerce'
 })

@@ -16,7 +16,7 @@ var db = mysql.createConnection({
 app.listen(process.env.PORT || port , () => {
     console.log('connected to port 3001');
 })
-app.get('/products', (req, res) => {
+app.get('/Products', (req, res) => {
     db.query('SELECT * FROM Products', (err, result) =>{
       if(err){
           console.log(err);
